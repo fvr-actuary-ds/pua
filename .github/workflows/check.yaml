@@ -2,12 +2,10 @@ name: Check PUA page
 
 on:
   schedule:
-    # Cada 5 minuts entre les 8:00 i les 19:59
-    - cron: "*/5 8-19 * * *"
-    # Cada 30 minuts entre les 20:00 i les 23:59
-    - cron: "*/30 20-23 * * *"
-    # Cada 30 minuts entre les 0:00 i les 7:59
-    - cron: "*/30 0-7 * * *"
+    # Cada 5 minuts entre les 6:00 i les 18:59 UTC (equivalent a 8:00–20:59 CEST)
+    - cron: "*/5 6-18 * * *"
+    # Cada 30 minuts entre les 19:00 i les 5:59 UTC (equivalent a 21:00–07:59 CEST)
+    - cron: "*/30 19-23,0-5 * * *"
   workflow_dispatch:  # permet executar manualment
 
 jobs:
