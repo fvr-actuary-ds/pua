@@ -36,7 +36,7 @@ def main():
             for uid in ALERT_CHAT_IDS:
                 send_alert(uid, "⚠️ ALERTA DIRECTA: El bloc d’informació ha canviat, és possible que les PUA estiguin EN TERMINI!")
     else:
-        print("ℹ[LOG] No s’ha trobat el div esperat. Avisar a Francesc.")
+        print("[LOG] No s’ha trobat el div esperat. Avisar a Francesc.")
         send_alert(CONTROL_CHAT_ID, "ℹ️ No s’ha trobat el div esperat. Avisar a Francesc.")
 
     # Grup sempre rep notificació de l’estat
