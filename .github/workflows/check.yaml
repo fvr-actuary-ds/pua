@@ -2,7 +2,7 @@ name: Check PUA page
 
 on:
   schedule:
-    - cron: "*/6 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:  # permet executar manualment
 
 jobs:
