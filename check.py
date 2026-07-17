@@ -11,7 +11,7 @@ ALERT_CHAT_IDS = os.getenv("TELEGRAM_CHAT_IDS").split(",")
 
 # Rpi logs
 rpi_value = os.getenv("RPI")
-RPI = True if rpi_value and rpi_value.lower() == "True" else False
+RPI = True if rpi_value and rpi_value.lower() == "true" else False
 print(RPI)
 # Has per comparar 
 BASELINE_HASH = "97d1286704811923721a61098ccd545e93a4d8395dc2f3165add97542aca4f53"
