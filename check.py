@@ -22,7 +22,7 @@ def send_alert(chat_id, msg):
 
 def main():
     now = datetime.now()
-    print(f"ℹ[LOG] Workflow executat a {now.strftime('%Y-%m-%d %H:%M:%S')} CEST")
+    print(f"[LOG] Workflow executat a {now.strftime('%Y-%m-%d %H:%M:%S')} CEST")
 
     html = requests.get(URL).text
     soup = BeautifulSoup(html, "html.parser")
