@@ -33,7 +33,7 @@ def send_alert(chat_id, msg):
 
 def main():
     now = datetime.now()
-    log_message("Workflow executat a ")
+    log_message("Iniciant Workflow...")
 
     html = requests.get(URL).text
     soup = BeautifulSoup(html, "html.parser")
